@@ -12,7 +12,7 @@ $(document).ready(function(){
     sum = sum + subject_points[2];
     sum = sum + subject_points[3];
     sum = sum + subject_points[4];
-  $("sum_indicate").text(sum);
+  $("#sum_indicate").text(sum);
 
   let average = sum / subject_points.length;
   $("#average_indicate").text(average);
@@ -21,7 +21,8 @@ $(document).ready(function(){
 function get_achievement(subject_points){
 
 let averageIndicate = $("#average_indicate").text();
-console.log(averageIndicate);
+console.log(averageIndicate)
+
     if (averageIndicate >= 80){
     return "A";
 
